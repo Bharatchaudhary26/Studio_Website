@@ -1,0 +1,745 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --text-main: #000;
+  --white-text: #fff;
+  --text-hover: #d40055;
+  --nav-background: #ffffff4c;
+  --btn-background: #d40055;
+  --btn-color: #fff;
+  --btn-hover: #ff0066;
+  /* font-family: "Caveat", cursive;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Merienda", cursive;
+  font-family: "Edu SA Beginner", cursive; */
+}
+
+.background {
+  position: absolute;
+  width: 98vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #fff;
+  overflow: hidden;
+}
+
+.background span {
+  width: 7vmin;
+  height: 7vmin;
+  border-radius: 7vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background span:nth-child(0) {
+  color: #ffccdb;
+  top: 44%;
+  left: 45%;
+  animation-duration: 47s;
+  animation-delay: -50s;
+  transform-origin: -14vw 17vh;
+  box-shadow: -14vmin 0 1.769991503406417vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #d5cae8;
+  top: 21%;
+  left: 92%;
+  animation-duration: 36s;
+  animation-delay: -5s;
+  transform-origin: 19vw 6vh;
+  box-shadow: 14vmin 0 2.4915826288206073vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #ffccdb;
+  top: 47%;
+  left: 27%;
+  animation-duration: 22s;
+  animation-delay: -48s;
+  transform-origin: 1vw -23vh;
+  box-shadow: -14vmin 0 2.5967131052923857vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #d5cae8;
+  top: 52%;
+  left: 86%;
+  animation-duration: 55s;
+  animation-delay: -49s;
+  transform-origin: -1vw 21vh;
+  box-shadow: 14vmin 0 2.2599941623523523vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #bfadff;
+  top: 38%;
+  left: 10%;
+  animation-duration: 55s;
+  animation-delay: -43s;
+  transform-origin: -21vw 11vh;
+  box-shadow: 14vmin 0 2.5211561319347258vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #d5cae8;
+  top: 95%;
+  left: 4%;
+  animation-duration: 15s;
+  animation-delay: -44s;
+  transform-origin: -10vw -9vh;
+  box-shadow: 14vmin 0 1.8358137675087476vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #bfadff;
+  top: 23%;
+  left: 14%;
+  animation-duration: 28s;
+  animation-delay: -41s;
+  transform-origin: 15vw 2vh;
+  box-shadow: 14vmin 0 2.1384310933358vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #d5cae8;
+  top: 56%;
+  left: 99%;
+  animation-duration: 32s;
+  animation-delay: -24s;
+  transform-origin: -24vw -13vh;
+  box-shadow: 14vmin 0 2.4778358347925824vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #bfadff;
+  top: 62%;
+  left: 43%;
+  animation-duration: 46s;
+  animation-delay: -5s;
+  transform-origin: -22vw -18vh;
+  box-shadow: -14vmin 0 2.3369882997333784vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #bfadff;
+  top: 9%;
+  left: 73%;
+  animation-duration: 30s;
+  animation-delay: -1s;
+  transform-origin: 7vw 22vh;
+  box-shadow: 14vmin 0 1.8187262275242482vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #bfadff;
+  top: 96%;
+  left: 48%;
+  animation-duration: 18s;
+  animation-delay: -7s;
+  transform-origin: -10vw 10vh;
+  box-shadow: -14vmin 0 2.531822702230655vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #ffccdb;
+  top: 54%;
+  left: 90%;
+  animation-duration: 48s;
+  animation-delay: -38s;
+  transform-origin: 10vw 12vh;
+  box-shadow: -14vmin 0 2.5689141598368517vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #d5cae8;
+  top: 19%;
+  left: 27%;
+  animation-duration: 53s;
+  animation-delay: -16s;
+  transform-origin: -17vw 19vh;
+  box-shadow: 14vmin 0 1.8823492412914118vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #ffccdb;
+  top: 1%;
+  left: 5%;
+  animation-duration: 42s;
+  animation-delay: -28s;
+  transform-origin: 17vw 18vh;
+  box-shadow: 14vmin 0 2.131635478358407vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: #ffccdb;
+  top: 23%;
+  left: 27%;
+  animation-duration: 13s;
+  animation-delay: -15s;
+  transform-origin: -21vw 6vh;
+  box-shadow: -14vmin 0 2.2143449764220993vmin currentColor;
+}
+
+/* ---------------- navigation ------------------  */
+
+.nav_section {
+  background-color: var(--nav-background);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  height: 90px;
+  margin: auto;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.logo img {
+  width: 220px;
+}
+
+.menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 22px;
+}
+
+/* .menu ul li a:hover {
+  color: var(--text-hover);
+} */
+
+/*--------------- main section -------------------- */
+
+.main_section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.left_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+.left_section h1 {
+  font-size: 4.5vw;
+  font-family: "Merienda", cursive;
+  font-weight: 800;
+}
+
+.left_section p {
+  margin: 20px 0 30px 0;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.button a:nth-child(1) {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  background-color: var(--btn-background);
+  color: var(--btn-color);
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 6px 15px;
+  margin: 0 22px 0 0;
+  border-radius: 15px;
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 20px;
+  font-weight: 600;
+  filter: drop-shadow(0px 1px 2px #ffffff);
+}
+
+.button a:nth-child(2) {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  background-color: #00767c;
+  color: #ffffff;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 6px 15px;
+  border-radius: 15px;
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 20px;
+  font-weight: 600;
+  filter: drop-shadow(0px 1px 2px #ffffff);
+}
+
+.button a:nth-child(1):hover {
+  text-decoration: none;
+  color: var(--white-text);
+  background-color: var(--btn-hover);
+}
+
+.button a:nth-child(2):hover {
+  text-decoration: none;
+  background-color: #009ca4;
+  color: #ffffff;
+}
+
+.left_section h1 samp {
+  font-family: "Merienda", cursive;
+  color: var(--text-hover);
+}
+
+.right_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_section img {
+  height: calc(100vh - 90px);
+  filter: drop-shadow(0px -5px 10px #86868666);
+}
+
+/* ---------------- services section ------------------  */
+
+.service_section {
+  background-color: #eef4f7;
+}
+
+.searvice {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.searvice_title h2 {
+  margin: 0 0 0 130px;
+  color: var(--text-main);
+  padding: 30px 0 0 0;
+  font-family: "Merienda", cursive;
+  font-weight: 800;
+}
+
+.shape {
+  display: flex;
+  border-radius: 5px;
+  width: 100px;
+  height: 5px;
+  background-color: #3e3e3ea6;
+  margin: 16px 210px 30px;
+}
+
+/* .grid {
+  color: var(--white-text);
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.all_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-text);
+  border-radius: 10px;
+}
+
+.box:nth-child(odd) {
+  border: 1px solid #d40055;
+  background-color: #d40055;
+}
+
+.box:nth-child(even) {
+  border: 1px solid #095bff;
+  background-color: #095bff;
+}
+
+.box_icon {
+  width: 110px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_text {
+  padding: 10px;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.box_text p {
+  margin-bottom: 0;
+}
+
+.box_icon i {
+  color: #fff;
+  font-size: 40px;
+} */
+
+.service_content {
+  justify-content: center;
+  align-items: center;
+}
+
+.ser_img img {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  /* mix-blend-mode: darken; */
+}
+
+.service_text p {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--btn-background);
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.talk_section {
+  max-width: 1300px;
+  margin: 60px auto auto auto;
+  padding: 0 10px;
+}
+
+.talk_box {
+  border: 1px solid #00767c;
+  border-radius: 15px;
+  background-color: #00767c;
+  padding: 30px;
+}
+
+.talk_title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white-text);
+  font-family: "Merienda", cursive;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.talk_shape {
+  display: flex;
+  margin: 15px auto 30px auto;
+  border-radius: 5px;
+  width: 100px;
+  height: 5px;
+  background-color: #ffffffa6;
+}
+
+.talk_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.talK_form div label {
+  color: var(--white-text);
+  font-family: "Edu SA Beginner", cursive;
+  font-weight: 600;
+}
+
+.talK_form div input,
+.talK_form div textarea,
+.talk_box div input:focus,
+.talk_box div textarea:focus {
+  background-color: #dededee3;
+  border: 1px solid #dededee3;
+  font-family: "Edu SA Beginner", cursive;
+  font-weight: 600;
+}
+
+/* Testimonial Section  */
+
+.testimonials-clean {
+  color: #313437;
+  background-color: #eef4f7;
+}
+
+.testimonials-clean p {
+  color: #7d8285;
+}
+
+.testimonials-clean h2 {
+  /* margin-bottom:40px; */
+  padding-top: 40px;
+  font-family: "Merienda", cursive;
+  font-weight: 800;
+}
+
+.testimonial_shape {
+  display: flex;
+  margin: 20px auto 50px auto;
+  border-radius: 5px;
+  width: 100px;
+  height: 5px;
+  background-color: #7d8285;
+}
+
+.testimonials-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.testimonials-clean .intro p {
+  margin-bottom: 0;
+}
+
+.testimonials-clean .people {
+  padding: 50px 0 20px;
+}
+
+.testimonials-clean .item {
+  margin-bottom: 32px;
+}
+
+.testimonials-clean .item .box {
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.testimonials-clean .item .box:after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: -24px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-width: 12px 15px;
+  border-top-color: #fff;
+}
+
+.testimonials-clean .item .author {
+  margin-top: 28px;
+  padding-left: 25px;
+}
+
+.testimonials-clean .item .name {
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: inherit;
+}
+
+.testimonials-clean .item .title {
+  font-size: 13px;
+  color: #9da9ae;
+}
+
+.testimonials-clean .item .description {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.testimonials-clean .item img {
+  max-width: 40px;
+  float: left;
+  margin-right: 12px;
+  margin-top: -5px;
+}
+
+/* book section  */
+
+.book_section {
+  background-color: #fdfaf2;
+}
+
+.book_title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-main);
+  font-family: "Merienda", cursive;
+  font-weight: 800;
+  padding: 50px 0 0 0;
+}
+
+.sub_title h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-main);
+  font-family: "Merienda", cursive;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.book {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .left_section h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 8vw;
+  }
+
+  .right_section img {
+    height: calc(80vh - 155px);
+  }
+
+  .service_content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .searvice_title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 17px auto 30px auto;
+  }
+
+  .testimonials-clean .item {
+    height: 220px;
+  }
+
+  .testimonials-clean h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    /* font-size:34px; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    display: flex;
+    margin: auto;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    height: 133px;
+    padding-bottom: 15px;
+  }
+
+  .menu ul li {
+    margin: 0 10px;
+  }
+
+  .ser_img img {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left_section h1 {
+    font-size: 9vw;
+    line-height: 50px;
+  }
+
+  .talk_box {
+    padding: 10px;
+  }
+
+  .talk_content {
+    max-width: 100%;
+  }
+
+  .button {
+    justify-content: center;
+  }
+}
